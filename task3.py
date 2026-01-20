@@ -1,42 +1,52 @@
 import random
 
 choices = random.choice(["rock","scissors", "paper", "lizard", "spock"])
-user = input(print("Enter your choices, rock, scissors, paper, lizard and spock: "))
+user = str(input(print("Enter your choices, rock, scissors, paper, lizard and spock: ")))
 u = True
 
 while u == True:
-    if choices == "rock":
-        if user == "izard" or "scissors":
+    if user == "rock":
+        if choices == "izard" or "scissors":
             print("You win!!")
             break
-        if user == "paper" or "spock":
+        if choices == "paper" or "spock":
             print("You lose")
             continue
-    if choices == "scissors":
-        if user == "izard" or "paper":
+        else:
+            print("One more time.")
+    if user == "scissors":
+        if choices == "izard" or "paper":
             print("You win!!")
             break
-        if user == "rock" or "spock":
+        if choices == "rock" or "spock":
             print("You lose")
             continue
-    if choices == "paper":
-        if user == "rock" or "spock":
+        else:
+            print("One more time.")
+    if user == "paper":
+        if choices == "rock" or "spock":
             print("You win!!")
             break
-        if user == "scissors" or "lizard":
+        if choices == "scissors" or "lizard":
             print("You lose")
             continue
-    if choices == "lizard":
-        if user == "spock" or "paper":
+        else:
+            print("One more time.")
+    if user == "lizard":
+        if choices == "spock" or "paper":
             print("You win!!")
             break
-        if user == "rock" or "scissors":
+        if choices == "rock" or "scissors":
             print("You lose")
             continue
-    if choices == "spock":
-        if user == "scissors" or "rock":
+        else:
+            print("One more time.")
+    if user == "spock":
+        if choices == "scissors" or "rock":
             print("You win!!")
             break
-        if user == "lizard" or "paper":
+        if choices == "lizard" or "paper":
             print("You lose")
             continue
+        else:
+            print("One more time.")
