@@ -1,16 +1,17 @@
 import random
 
-u = True
+w = ["heads", "tails"]
 correct = 0
 incorrect = 0
 
-while u == True:
-    coin = random.choice(["heads", "tails"])
-    guess = input(print("Coin Toss. Enter your choice, heads or tails: "))
+while True:
+    coin = random.choice(w)
+    print("0:heads, 1:tails")
+    guess = w[int(input("Coin Toss. Enter a number: "))]
     if coin == guess:
         print("You are correct!!")
         correct += 1
-        con = input(print("Do you want to go again(yes or no)?"))
+        con = input("Do you want to go again(yes or no)?")
         if con == "yes":
             continue
         else:
@@ -23,4 +24,3 @@ while u == True:
         continue
 
 #nannka busaiku na coding
-#kirei ni suru
