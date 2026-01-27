@@ -1,13 +1,11 @@
 import random
 
-w = ["heads", "tails"]
 correct = 0
 incorrect = 0
 
 while True:
-    coin = random.choice(w)
-    print("0:heads, 1:tails")
-    guess = w[int(input("Coin Toss. Enter a number: "))]
+    coin = random.randint(0, 1)
+    guess = int(input("0:heads, 1:tails")
     if coin == guess:
         print("You are correct!!")
         correct += 1
