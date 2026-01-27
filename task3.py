@@ -22,11 +22,9 @@ while True:
     user = hand[int(input("Enter a number: "))]
     if cp == user:
         print("try again")
-        continue
     elif ww(user, cp):
         print("You win")
         break
     else:
         print("You lost")
-        continue
 
